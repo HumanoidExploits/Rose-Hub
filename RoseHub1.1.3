@@ -76,10 +76,10 @@ local guitabList = {
 	{"Chams / Aimlock", "Yi7fzELj", 1},
 }
 
-local coreGui = game:GetService("Players").LocalPlayer.PlayerGui
+local gui = game:GetService("Players").LocalPlayer.PlayerGui
 
 --Intro
-local Intro = Instance.new("ScreenGui",coreGui)
+local Intro = Instance.new("ScreenGui",gui)
 local a,c = 0,0
 local IntroRose = Instance.new("ImageLabel")
 IntroRose.Parent = Intro
@@ -235,7 +235,7 @@ end
 
 --Make Screen
 screenGui = Instance.new("ScreenGui")
-screenGui.Parent = coreGui
+screenGui.Parent = gui
 screenGui.Name = "RoseHubClone"
 
 makeFrame(true, Color3.fromRGB(255, 84, 126), 0.35, "open", screenGui, UDim2.new(-0.5, 0, 0.5, 0), UDim2.new(0, 195, 0, 61), true, false, Vector2.new(0, 0), 1)
